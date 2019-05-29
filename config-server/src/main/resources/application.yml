@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AidanZhu/SpringCloudConfig.git
+          search-paths: spring_cloud_in_action/config-repo
+          username: AidanZhu
+          password: zyh*1990=1016
+server:
+  port: 9012
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/,http://localhost:9004/eureka/

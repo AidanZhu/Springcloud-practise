@@ -1,0 +1,19 @@
+#server
+server:
+  port: 9004
+
+#eureka
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9001/eureka/
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+
+spring:
+  application:
+    name: service-eureka
