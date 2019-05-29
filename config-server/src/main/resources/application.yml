@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/AidanZhu/SpringCloudConfig.git
           search-paths: spring_cloud_in_action/config-repo
           username: AidanZhu
-          password: zyh*1990=1016
+          password: xxx
 server:
   port: 9012
 
